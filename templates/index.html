@@ -10,8 +10,8 @@
       추가정보를 입력하세요.
       <form action="" method ="post">
         {% csrf_token %}
-        <div>
-          <input type="text" name="name">
+        <!-- <div class="form- group">
+          <input type="text" name="name" class="form-control">
         </div>
         <div>
           <input type="text" name="contact">
@@ -22,8 +22,9 @@
         <div>
           <input type="text" name="description">
         </div>
-
-        <button>저장하기</button>
+ -->
+        {{form.as_p}}
+        <button class="btn btn-default">저장하기</button>
       </form>
     {% endif %}
   {% else %}
