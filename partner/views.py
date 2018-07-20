@@ -5,7 +5,7 @@ from django.contrib.auth import (
 )
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
-from .form import PartnerForm
+from .forms import PartnerForm
 
 # Create your views here.
 def index(request):
